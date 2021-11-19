@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #320d3e;
+  font-family: 'Acme', sans-serif;
+}
+
+#container {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 1px 1px #000;
+}
+
+#container #selection {
+  width: 90%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+#container #selection div {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-animation: flip .8s linear 1;
+          animation: flip .8s linear 1;
+}
+
+#container #selection div:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+#container #selection div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#container #computer-choise {
+  width: 220px;
+  height: 224px;
+  margin-top: 40px;
+}
+
+#container #computer-choise img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#container #winner {
+  font-size: 50px;
+}
+
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
